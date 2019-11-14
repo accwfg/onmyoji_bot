@@ -4,7 +4,8 @@ class GamePos():
         self.pos_end=pos_end
 
 class CommonPos():
-    second_position = (877, 56), (1111, 452)  # 第二次结算所点击的位置
+    # second_position = (877, 56), (1111, 452)  # 第二次结算所点击的位置
+    second_position = (1000, 100), (1111, 452)  # 第二次结算所点击的位置
 
 class TansuoPos():
     last_chapter = (934, 493), (1108, 572)  # 列表最后一章
