@@ -1,3 +1,4 @@
+from activity328.Activity328 import Activity328
 from explore.explore import ExploreFight
 from mitama.dual import DualFighter
 from mitama.fighter_driver import DriverFighter
@@ -6,7 +7,7 @@ from mitama.single_fight import SingleFight
 from PyQt5.QtGui import QTextCursor
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtCore import QObject, pyqtSignal
-from Ui_onmyoji import Ui_MainWindow
+from onmyoji import Ui_MainWindow
 
 import configparser
 import ctypes
@@ -23,19 +24,21 @@ def is_admin():
     except:
         return False
 
+
 class GuiLogger(logging.Handler):
     def emit(self, record):
         self.edit.append(self.format(record))  # implementation of append_line omitted
         self.edit.moveCursor(QTextCursor.End)
 
+
 class MyMainWindow(QMainWindow):
-    def __init__(self, parent = None):
+    def __init__(self, parent=None):
         super(MyMainWindow, self).__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
         self.ui.textEdit.ensureCursorVisible()
-        
+
         h = GuiLogger()
         h.edit = self.ui.textEdit
         logger = logging.getLogger()
@@ -67,7 +70,7 @@ class MyMainWindow(QMainWindow):
                      str(self.ui.horizontalSlider.value()))
             conf.set('explore', 'zhunbei_delay',
                      str(self.ui.lineEdit_3.text()))
-    
+
     def get_conf(self, section):
         conf = configparser.ConfigParser()
         # 读取配置文件
@@ -83,7 +86,7 @@ class MyMainWindow(QMainWindow):
 
         # 保存配置文件
         with open('conf.ini', 'w') as configfile:
-                conf.write(configfile)
+            conf.write(configfile)
 
     def start_onmyoji(self):
         section = self.ui.tabWidget.currentIndex()
@@ -96,11 +99,11 @@ class MyMainWindow(QMainWindow):
             if self.ui.mitama_single.isChecked():
                 # 单刷
                 self.fight = SingleFight()
-    
+
             elif self.ui.mitama_driver.isChecked():
                 # 司机
                 self.fight = DriverFighter()
-    
+
             if self.ui.mitama_passenger.isChecked():
                 # 乘客
                 self.fight = FighterPassenger()
@@ -108,12 +111,14 @@ class MyMainWindow(QMainWindow):
             if self.ui.mitama_dual.isChecked():
                 # 双开
                 self.fight = DualFighter()
-        
+
         elif section == 1:
             # 探索
             self.fight = ExploreFight()
-
-        task = threading.Thread(target = self.fight.start)
+        elif section == 2:
+            if self.ui.Check328Passenger.isChecked():
+                self.fight = Activity328()
+        task = threading.Thread(target=self.fight.start)
         task.start()
 
     def stop_onmyoji(self):
@@ -122,8 +127,9 @@ class MyMainWindow(QMainWindow):
         except:
             pass
 
-if __name__=="__main__":  
-    
+
+if __name__ == "__main__":
+
     try:
         # 检测管理员权限
         if is_admin():

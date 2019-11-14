@@ -1,0 +1,11 @@
+
+*.pyc
+*.spec
+*.exe
+img/full.png
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/onmyoji_bot.iml
+.idea/vcs.xml

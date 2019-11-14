@@ -144,7 +144,7 @@
             </size>
            </property>
            <property name="currentIndex">
-            <number>0</number>
+            <number>2</number>
            </property>
            <widget class="QWidget" name="tab">
             <attribute name="title">
@@ -289,6 +289,24 @@
              </item>
             </layout>
            </widget>
+           <widget class="QWidget" name="tab_4">
+            <attribute name="title">
+             <string>328车</string>
+            </attribute>
+            <widget class="QRadioButton" name="Check328Passenger">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>115</width>
+               <height>19</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>乘客</string>
+             </property>
+            </widget>
+           </widget>
            <widget class="QWidget" name="tab_3">
             <attribute name="title">
              <string>关于</string>
@@ -429,7 +447,7 @@
      <x>0</x>
      <y>0</y>
      <width>545</width>
-     <height>23</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
