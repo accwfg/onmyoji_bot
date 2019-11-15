@@ -7,24 +7,24 @@ log = WriteLog()
 
 
 class Mood:
-    '''
+    """
     用于模拟随机的点击频率，每5分钟更换一次点击规律\n
-    energetic: 状态极佳，点击延迟在1-1.5s\n
-    joyful: 状态不错，点击延迟在1.3-2.1s\n
-    normal: 状态一般，点击延迟在1.8-3s\n
-    tired: 状态疲劳，点击延迟在2.5-4\n
-    exhausted: CHSM，点击延迟在3-5s\n
-    '''
+    energetic: 状态极佳，state=1\n
+    joyful: 状态不错，state=2\n
+    normal: 状态一般，state=3\n
+    tired: 状态疲劳，state=4\n
+    exhausted: CHSM，state=5\n
+    """
 
     def __init__(self, state=5):
         self.lastime = time.time()
         self.state = state
         Mood.mymood = {
-            1: (5000, 500),
-            2: (1000, 800),
-            3: (1300, 1000),
-            4: (1500, 1000),
-            5: (2000, 1000)}
+            1: (1000, 300),
+            2: (1500, 500),
+            3: (2000, 500),
+            4: (2500, 500),
+            5: (3000, 500)}
         a = random.randint(1, self.state)
         log.writeinfo("Now you mood is level %d", a)
         self.lastmood = Mood.mymood[a]
@@ -41,6 +41,10 @@ class Mood:
         mysleep(*self.getmood())
 
     def get1mood(self):
+        """
+        根据当前的state返回一个随机时间
+        :return:
+        """
         return random.randint(self.getmood()[0], self.getmood()[0] + self.getmood()[1])
 
 

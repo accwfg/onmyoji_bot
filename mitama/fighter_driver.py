@@ -31,15 +31,13 @@ class DriverFighter(Fighter):
                              YuhunPos.kaishizhandou_btn, mood2.get1mood()/1000)
             self.log.writeinfo('Driver: 已进入战斗')
 
-            # 已经进入战斗，司机自动点怪
-            self.click_monster()
 
             # 检测是否打完
             self.check_end()
             mood2.moodsleep()
 
             # 在战斗结算页面
-            self.yys.mouse_click_bg(ut.firstposition())
+            # self.yys.mouse_click_bg(ut.firstposition())
             self.click_until('结算', 'img/JIN-BI.png',
                              *CommonPos.second_position, mood3.get1mood()/1000)
             self.click_until('结算', 'img/JIN-BI.png',

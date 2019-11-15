@@ -36,9 +36,7 @@ class MyMainWindow(QMainWindow):
         super(MyMainWindow, self).__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-
         self.ui.textEdit.ensureCursorVisible()
-
         h = GuiLogger()
         h.edit = self.ui.textEdit
         logger = logging.getLogger()
@@ -89,35 +87,27 @@ class MyMainWindow(QMainWindow):
             conf.write(configfile)
 
     def start_onmyoji(self):
-        section = self.ui.tabWidget.currentIndex()
 
         # 读取配置
         self.get_conf(section)
 
-        if section == 0:
-            # 御魂
-            if self.ui.mitama_single.isChecked():
-                # 单刷
-                self.fight = SingleFight()
+        # 御魂
+        if self.ui.mitama_single.isChecked():
+            # 单刷
+            self.fight = SingleFight()
 
-            elif self.ui.mitama_driver.isChecked():
-                # 司机
-                self.fight = DriverFighter()
+        elif self.ui.mitama_driver.isChecked():
+            # 司机
+            self.fight = DriverFighter()
 
-            if self.ui.mitama_passenger.isChecked():
-                # 乘客
-                self.fight = FighterPassenger()
+        if self.ui.mitama_passenger.isChecked():
+            # 乘客
+            self.fight = FighterPassenger()
 
-            if self.ui.mitama_dual.isChecked():
-                # 双开
-                self.fight = DualFighter()
+        if self.ui.mitama_dual.isChecked():
+            # 双开
+            self.fight = DualFighter()
 
-        elif section == 1:
-            # 探索
-            self.fight = ExploreFight()
-        elif section == 2:
-            if self.ui.Check328Passenger.isChecked():
-                self.fight = Activity328()
         task = threading.Thread(target=self.fight.start)
         task.start()
 

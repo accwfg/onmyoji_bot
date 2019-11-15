@@ -51,10 +51,11 @@ class DualFighter():
         task2 = threading.Thread(target=self.passenger.start)
         task1.start()
         task2.start()
-
         task1.join()
         task2.join()
 
     def deactivate(self):
+        # 停止脚本后需要移除所有获取的窗体句柄
+        hwndlist.clear()
         self.driver.deactivate()
         self.passenger.deactivate()

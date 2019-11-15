@@ -144,7 +144,13 @@
             </size>
            </property>
            <property name="currentIndex">
-            <number>2</number>
+            <number>0</number>
+           </property>
+           <property name="usesScrollButtons">
+            <bool>false</bool>
+           </property>
+           <property name="tabBarAutoHide">
+            <bool>true</bool>
            </property>
            <widget class="QWidget" name="tab">
             <attribute name="title">
@@ -157,17 +163,20 @@
                 <string>模式</string>
                </property>
                <layout class="QGridLayout" name="gridLayout">
-                <item row="0" column="2">
-                 <widget class="QRadioButton" name="mitama_passenger">
-                  <property name="text">
-                   <string>单人乘客</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="1">
+                <property name="leftMargin">
+                 <number>30</number>
+                </property>
+                <item row="1" column="0">
                  <widget class="QRadioButton" name="mitama_driver">
                   <property name="text">
                    <string>单人司机</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QRadioButton" name="mitama_dual">
+                  <property name="text">
+                   <string>双开</string>
                   </property>
                  </widget>
                 </item>
@@ -184,150 +193,14 @@
                   </property>
                  </widget>
                 </item>
-                <item row="1" column="0">
-                 <widget class="QRadioButton" name="mitama_dual">
+                <item row="2" column="0">
+                 <widget class="QRadioButton" name="mitama_passenger">
                   <property name="text">
-                   <string>双开</string>
+                   <string>单人乘客</string>
                   </property>
                  </widget>
                 </item>
                </layout>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QWidget" name="tab_2">
-            <attribute name="title">
-             <string>探索</string>
-            </attribute>
-            <layout class="QGridLayout" name="gridLayout_5">
-             <item row="1" column="0">
-              <widget class="QGroupBox" name="groupBox_3">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>0</height>
-                </size>
-               </property>
-               <property name="title">
-                <string>延迟设置</string>
-               </property>
-               <layout class="QGridLayout" name="gridLayout_8">
-                <item row="0" column="1">
-                 <widget class="QLineEdit" name="lineEdit_3">
-                  <property name="text">
-                   <string>3</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QLabel" name="label_5">
-                  <property name="text">
-                   <string>满级狗粮识别延迟(秒)：</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="QCheckBox" name="checkBox_3">
-               <property name="text">
-                <string>换狗粮拖放式神进度条，进度：</string>
-               </property>
-               <property name="checked">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="0">
-              <widget class="QSlider" name="horizontalSlider">
-               <property name="sliderPosition">
-                <number>10</number>
-               </property>
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="0">
-              <widget class="QCheckBox" name="checkBox_2">
-               <property name="text">
-                <string>结束后打BOSS</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <widget class="QPlainTextEdit" name="plainTextEdit_2">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="readOnly">
-                <bool>true</bool>
-               </property>
-               <property name="plainText">
-                <string>把狗粮队长放在最左边，点开需要打的章节，然后开始。
-
-支持自动换狗粮，只打经验怪。
-
-最好把“合并相同式神”选项关闭。</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="Line" name="line_4">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QWidget" name="tab_4">
-            <attribute name="title">
-             <string>328车</string>
-            </attribute>
-            <widget class="QRadioButton" name="Check328Passenger">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>20</y>
-               <width>115</width>
-               <height>19</height>
-              </rect>
-             </property>
-             <property name="text">
-              <string>乘客</string>
-             </property>
-            </widget>
-           </widget>
-           <widget class="QWidget" name="tab_3">
-            <attribute name="title">
-             <string>关于</string>
-            </attribute>
-            <layout class="QGridLayout" name="gridLayout_4">
-             <item row="0" column="0">
-              <widget class="QPlainTextEdit" name="plainTextEdit">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="readOnly">
-                <bool>true</bool>
-               </property>
-               <property name="plainText">
-                <string>网址：https://github.com/AcademicDog/onmyoji_bot
-
-交流Q群：592055060</string>
-               </property>
               </widget>
              </item>
             </layout>
@@ -359,7 +232,7 @@
             <enum>Qt::LeftToRight</enum>
            </property>
            <property name="title">
-            <string>高级选项</string>
+            <string>参数</string>
            </property>
            <layout class="QGridLayout" name="gridLayout_7">
             <item row="0" column="0">
@@ -401,7 +274,7 @@
                </size>
               </property>
               <property name="text">
-               <string>100</string>
+               <string>60</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -417,7 +290,7 @@
                </size>
               </property>
               <property name="text">
-               <string>20</string>
+               <string>60</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -441,23 +314,6 @@
     </item>
    </layout>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>545</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menu">
-    <property name="title">
-     <string>帮助</string>
-    </property>
-    <addaction name="actionAbout"/>
-   </widget>
-   <addaction name="menu"/>
-  </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionFile">
    <property name="text">
@@ -467,14 +323,6 @@
   <action name="actionAbout_2">
    <property name="text">
     <string>About</string>
-   </property>
-  </action>
-  <action name="actionAbout">
-   <property name="text">
-    <string>About</string>
-   </property>
-   <property name="statusTip">
-    <string/>
    </property>
   </action>
  </widget>
@@ -487,8 +335,8 @@
    <slot>start_onmyoji()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>217</x>
-     <y>508</y>
+     <x>499</x>
+     <y>504</y>
     </hint>
     <hint type="destinationlabel">
      <x>197</x>
@@ -503,8 +351,8 @@
    <slot>stop_onmyoji()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>253</x>
-     <y>537</y>
+     <x>527</x>
+     <y>539</y>
     </hint>
     <hint type="destinationlabel">
      <x>287</x>

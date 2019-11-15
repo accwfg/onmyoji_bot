@@ -25,14 +25,14 @@ class FighterPassenger(Fighter):
             self.check_battle()
 
             # 已经进入战斗，乘客自动点怪
-            self.click_monster()
+            # self.click_monster()
 
             # 检测是否打完
             self.check_end()
             mood2.moodsleep()
 
             # 在战斗结算页面
-            self.yys.mouse_click_bg(ut.firstposition())
+            # self.yys.mouse_click_bg(ut.firstposition())
             self.click_until('结算', 'img/JIN-BI.png',
                              *CommonPos.second_position, mood3.get1mood()/1000)
             self.click_until('结算', 'img/JIN-BI.png',
@@ -50,6 +50,7 @@ class FighterPassenger(Fighter):
                 # 检测是否有御魂邀请
                 yuhun_loc = self.yys.wait_game_img(
                     'img\\YU-HUN.png', 0.1, False)
+                print('wait_game_img返回的坐标为:{}'.format(yuhun_loc))
                 if yuhun_loc:
                     # 点击自动接受邀请
                     if self.yys.find_game_img('img\\ZI-DONG-JIE-SHOU.png'):

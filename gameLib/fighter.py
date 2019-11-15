@@ -61,7 +61,7 @@ class Fighter:
         # 点击怪物
         pass
 
-    def click_until(self, tag, img_path, pos, pos_end=None, step_time=0.5, appear=True):
+    def click_until(self, tag, img_path, pos, pos_end=None, step_time=1, appear=True):
         '''
         在某一时间段内，后台点击鼠标，直到出现某一图片出现或消失
             :param tag: 按键名
