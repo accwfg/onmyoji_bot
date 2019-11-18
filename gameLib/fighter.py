@@ -60,6 +60,32 @@ class Fighter:
     def click_monster(self):
         # 点击怪物
         pass
+    def click_once_if_appear(self,tag,img_path, pos, pos_end=None,step_time=0.5, appear=True):
+        """
+        如果图片出现或消失了，那么鼠标点击一次
+        :param tag: 标记
+        :param img_path:路径
+        :param pos:位置左上角
+        :param pos_end:位置右下角
+        :param appear:True则为出现，False则为消失
+        :return:
+        """
+        start_time = time.time()
+        while time.time() - start_time <= self.max_op_time and self.run:
+            result = self.yys.find_game_img(img_path)
+            if not appear:
+                result = not result
+            if result:
+                self.yys.mouse_click_bg(pos, pos_end)
+                self.log.writeinfo(self.name + '点击 ' + tag + ' 成功')
+                return True
+            time.sleep(step_time)
+        self.log.writewarning(self.name + '点击 ' + tag + ' 失败!')
+
+        # 提醒玩家点击失败，并在5s后退出
+        self.yys.activate_window()
+        time.sleep(5)
+        self.yys.quit_game()
 
     def click_until(self, tag, img_path, pos, pos_end=None, step_time=0.5, appear=True):
         '''

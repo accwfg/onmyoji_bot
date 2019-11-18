@@ -7,7 +7,9 @@ import time
 
 
 class DriverFighter(Fighter):
-    '''御魂战斗司机程序，参数mode, emyc'''
+    """
+    御魂战斗司机程序，参数mode, emyc
+    """
 
     def __init__(self, emyc=0, hwnd=0, needMark=False, passengerNum=2):
         # 初始化
@@ -40,7 +42,7 @@ class DriverFighter(Fighter):
 
             if self.needMark:
                 # todo 点击大舅妈
-                self.click_until('开始战斗按钮', 'img\\YI-HUI-MU.png', *
+                self.click_once_if_appear('开始战斗按钮', 'img\\YI-HUI-MU.png', *
                 YuhunPos.大舅妈位置, mood2.get1mood() / 1000, appear=True)
 
             # 检测是否打完
