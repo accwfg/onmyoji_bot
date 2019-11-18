@@ -1,5 +1,6 @@
 from activity328.Activity328 import Activity328
 from explore.explore import ExploreFight
+from mitama.ThreePerson import ThreePerson
 from mitama.dual import DualFighter
 from mitama.fighter_driver import DriverFighter
 from mitama.fighter_passenger import FighterPassenger
@@ -50,6 +51,8 @@ class MyMainWindow(QMainWindow):
         # 一般参数
         conf.set('watchdog', 'watchdog_enable',
                  str(self.ui.checkBox.isChecked()))
+        conf.set('watchdog', 'autoMark',
+                 str(self.ui.autoMark.isChecked()))
         conf.set('watchdog', 'max_win_time', str(self.ui.lineEdit.text()))
         conf.set('watchdog', 'max_op_time', str(self.ui.lineEdit_2.text()))
 
@@ -87,26 +90,32 @@ class MyMainWindow(QMainWindow):
             conf.write(configfile)
 
     def start_onmyoji(self):
-
+        section = self.ui.tabWidget.currentIndex()
         # 读取配置
         self.get_conf(section)
+        if section == 0:
+            # 御魂
+            if self.ui.mitama_single.isChecked():
+                # 单刷
+                self.fight = SingleFight()
 
-        # 御魂
-        if self.ui.mitama_single.isChecked():
-            # 单刷
-            self.fight = SingleFight()
+            elif self.ui.mitama_driver.isChecked():
+                # 司机
+                self.fight = DriverFighter(self.ui.autoMark.isChecked())
 
-        elif self.ui.mitama_driver.isChecked():
-            # 司机
-            self.fight = DriverFighter()
+            elif self.ui.mitama_passenger.isChecked():
+                # 乘客
+                self.fight = FighterPassenger()
 
-        if self.ui.mitama_passenger.isChecked():
-            # 乘客
-            self.fight = FighterPassenger()
+            elif self.ui.mitama_dual.isChecked():
+                # 双开
+                self.fight = DualFighter(self.ui.autoMark.isChecked())
 
-        if self.ui.mitama_dual.isChecked():
-            # 双开
-            self.fight = DualFighter()
+            elif self.ui.mitama_three.isChecked():
+                self.fight = ThreePerson(self.ui.autoMark.isChecked())
+
+        elif section == 1:
+            self.fight = ExploreFight()
 
         task = threading.Thread(target=self.fight.start)
         task.start()

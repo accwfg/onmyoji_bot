@@ -24,7 +24,11 @@ def get_game_hwnd():
 
 
 class DualFighter():
-    def __init__(self):
+    def __init__(self, needMark=False):
+        """
+        初始化
+        :param needMark: 是否需要自动标记式神
+        """
         # 初始化窗口信息
         get_game_hwnd()
         self.hwndlist = hwndlist
@@ -34,13 +38,13 @@ class DualFighter():
         if num == 2:
             logging.info('检测到两个窗口，窗口信息正常')
         else:
-            logging.warning('检测到'+str(num)+'个窗口，窗口信息异常！')
+            logging.warning('检测到' + str(num) + '个窗口，窗口信息异常！')
 
         # 初始化司机和打手
         for hwnd in hwndlist:
             yys = GameControl(hwnd)
             if yys.find_game_img('img\\KAI-SHI-ZHAN-DOU.png'):
-                self.driver = DriverFighter(hwnd=hwnd)
+                self.driver = DriverFighter(hwnd=hwnd, needMark=needMark)
                 hwndlist.remove(hwnd)
                 logging.info('发现司机')
         self.passenger = FighterPassenger(hwnd=hwndlist[0])
@@ -51,8 +55,8 @@ class DualFighter():
         task2 = threading.Thread(target=self.passenger.start)
         task1.start()
         task2.start()
-        task1.join()
-        task2.join()
+        # task1.join()
+        # task2.join()
 
     def deactivate(self):
         # 停止脚本后需要移除所有获取的窗体句柄

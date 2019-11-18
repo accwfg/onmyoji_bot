@@ -9,9 +9,11 @@ import time
 class DriverFighter(Fighter):
     '''御魂战斗司机程序，参数mode, emyc'''
 
-    def __init__(self, emyc=0, hwnd=0):
+    def __init__(self, emyc=0, hwnd=0, needMark=False, passengerNum=2):
         # 初始化
         Fighter.__init__(self, 'Driver: ', emyc, hwnd)
+        self.needMark = needMark
+        self.passengerNum = passengerNum
 
     def start(self):
         '''单人御魂司机'''
@@ -26,28 +28,36 @@ class DriverFighter(Fighter):
         while self.run:
             # 司机点击开始战斗，需要锁定御魂阵容
             mood1.moodsleep()
-            self.log.writeinfo('Driver: 点击开始战斗按钮')
-            self.click_until('开始战斗按钮', 'img\\ZI-DONG.png', *
-                             YuhunPos.kaishizhandou_btn, mood2.get1mood()/1000)
-            self.log.writeinfo('Driver: 已进入战斗')
+            if self.passengerNum == 2:
+                self.log.writeinfo('Driver: 等待1位乘客上车')
+                self.click_until('开始战斗按钮', 'img\\ZI-DONG.png', *
+                YuhunPos.开始战斗按钮, mood2.get1mood() / 1000)
+                self.log.writeinfo('Driver: 已进入战斗')
+            elif self.passengerNum == 3:
+                self.log.writeinfo('Driver: 等待2位乘客上车')
+                self.click_until('开始战斗按钮', 'img\\DUI-YOU-JIA-HAO.png', *
+                YuhunPos.开始战斗按钮, mood2.get1mood() / 1000, appear=False)
 
+            if self.needMark:
+                # todo 点击大舅妈
+                self.click_until('开始战斗按钮', 'img\\YI-HUI-MU.png', *
+                YuhunPos.大舅妈位置, mood2.get1mood() / 1000, appear=True)
 
             # 检测是否打完
             self.check_end()
             mood2.moodsleep()
 
             # 在战斗结算页面
-            # self.yys.mouse_click_bg(ut.firstposition())
             self.click_until('结算', 'img/JIN-BI.png',
-                             *CommonPos.second_position, mood3.get1mood()/1000)
+                             *CommonPos.second_position, mood3.get1mood() / 1000)
             self.click_until('结算', 'img/JIN-BI.png',
-                             *CommonPos.second_position, mood3.get1mood()/1000, False)
+                             *CommonPos.second_position, mood3.get1mood() / 1000, False)
 
             # 等待下一轮
             logging.info('Driver: 等待下一轮')
             start_time = time.time()
             while time.time() - start_time <= 20 and self.run:
-                if(self.yys.wait_game_img('img\\KAI-SHI-ZHAN-DOU.png', 1, False)):
+                if (self.yys.wait_game_img('img\\KAI-SHI-ZHAN-DOU.png', 1, False)):
                     self.log.writeinfo('Driver: 进入队伍')
                     break
 

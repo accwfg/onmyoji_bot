@@ -176,7 +176,7 @@ class GameControl():
             minVal, maxVal, minLoc, maxLoc = cv2.minMaxLoc(res)
             # print(maxLoc)
             return maxVal, maxLoc
-        except:
+        except Exception as e:
             return 0, 0
 
     def find_multi_img(self, *img_template_path, part=0, pos1=None, pos2=None, gray=0):
