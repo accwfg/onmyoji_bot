@@ -20,11 +20,11 @@ class Mood:
         self.lastime = time.time()
         self.state = state
         Mood.mymood = {
-            1: (500, 300),
-            2: (1000, 500),
-            3: (1500, 500),
-            4: (2000, 500),
-            5: (2500, 500)}
+            1: (1000, 300),
+            2: (1500, 500),
+            3: (2000, 500),
+            4: (2500, 500),
+            5: (3000, 500)}
         a = random.randint(1, self.state)
         log.writeinfo("Now you mood is level %d", a)
         self.lastmood = Mood.mymood[a]

@@ -29,7 +29,7 @@ class Fighter:
         quit_game_enable = conf.getboolean('watchdog', 'watchdog_enable')
         self.max_op_time = conf.getint('watchdog', 'max_op_time')
         self.max_win_time = conf.getint('watchdog', 'max_win_time')
-
+        self.ShiShenPos = (int(conf.getint('watchdog', 'ShiShenPosX')), int(conf.getint('watchdog', 'ShiShenPosY')))
         # 启动日志
         self.log = WriteLog()
 
@@ -60,7 +60,8 @@ class Fighter:
     def click_monster(self):
         # 点击怪物
         pass
-    def click_once_if_appear(self,tag,img_path, pos, pos_end=None,step_time=0.5, appear=True):
+
+    def click_once_if_appear(self, tag, img_path, pos, pos_end=None, step_time=1, appear=True):
         """
         如果图片出现或消失了，那么鼠标点击一次
         :param tag: 标记
@@ -73,9 +74,10 @@ class Fighter:
         start_time = time.time()
         while time.time() - start_time <= self.max_op_time and self.run:
             result = self.yys.find_game_img(img_path)
-            if not appear:
-                result = not result
+            # if not appear:
+            #     result = not result
             if result:
+                time.sleep(2)
                 self.yys.mouse_click_bg(pos, pos_end)
                 self.log.writeinfo(self.name + '点击 ' + tag + ' 成功')
                 return True
@@ -100,7 +102,7 @@ class Fighter:
         '''
         # 在指定时间内反复监测画面并点击
         start_time = time.time()
-        while time.time()-start_time <= self.max_op_time and self.run:
+        while time.time() - start_time <= self.max_op_time and self.run:
             result = self.yys.find_game_img(img_path)
             if not appear:
                 result = not result
@@ -180,7 +182,7 @@ class Fighter:
 
                 # 点击探索灯笼进入探索界面
                 self.click_until('探索灯笼', 'img/JUE-XING.png', *
-                                 TansuoPos.tansuo_denglong, 2)
+                TansuoPos.tansuo_denglong, 2)
 
                 # 递归
                 self.switch_to_scene(scene)

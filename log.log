@@ -1,0 +1,283 @@
+Tue, 19 Nov 2019 00:47:16  ThreePerson.py  [line:35]  INFO  检测到三个窗口，窗口信息正常
+Tue, 19 Nov 2019 00:47:17  logsystem.py  [line:20]  INFO  Driver: 绑定窗口成功
+Tue, 19 Nov 2019 00:47:17  logsystem.py  [line:20]  INFO  Driver: 787970
+Tue, 19 Nov 2019 00:47:17  logsystem.py  [line:20]  INFO  Driver: 激活窗口成功
+Tue, 19 Nov 2019 00:47:17  ThreePerson.py  [line:48]  INFO  发现司机
+Tue, 19 Nov 2019 00:47:17  logsystem.py  [line:20]  INFO  Passenger: 绑定窗口成功
+Tue, 19 Nov 2019 00:47:17  logsystem.py  [line:20]  INFO  Passenger: 592540
+Tue, 19 Nov 2019 00:47:17  logsystem.py  [line:20]  INFO  Passenger: 激活窗口成功
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Passenger: 绑定窗口成功
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Passenger: 1182162
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Passenger: 激活窗口成功
+Tue, 19 Nov 2019 00:47:18  ThreePerson.py  [line:51]  INFO  发现两个乘客
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Now you mood is level 2
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Now you mood is level 4
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Now you mood is level 3
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Now you mood is level 3
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Now you mood is level 1
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Now you mood is level 3
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Now you mood is level 2
+Tue, 19 Nov 2019 00:47:18  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:47:20  logsystem.py  [line:20]  INFO  Driver: 等待2位乘客上车
+Tue, 19 Nov 2019 00:47:21  fighter_driver.py  [line:59]  INFO  等待点击大舅妈,坐标(540, 388)
+Tue, 19 Nov 2019 00:47:21  logsystem.py  [line:20]  INFO  Driver: 等待点击式神
+Tue, 19 Nov 2019 00:47:25  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:47:25  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:47:25  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:47:25  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:47:26  logsystem.py  [line:20]  INFO  Driver: 点击 式神 成功
+Tue, 19 Nov 2019 00:47:26  logsystem.py  [line:20]  INFO  Driver: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:47:52  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:47:53  logsystem.py  [line:20]  INFO  Driver: 战斗结束
+Tue, 19 Nov 2019 00:47:53  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:47:54  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:47:55  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:47:56  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:47:56  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:47:58  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:47:58  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:47:58  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:47:58  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:48:00  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:48:00  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:48:01  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:48:01  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:48:01  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:48:01  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:48:04  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:48:04  fighter_driver.py  [line:78]  INFO  Driver: 等待下一轮
+Tue, 19 Nov 2019 00:48:04  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:48:04  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:48:04  logsystem.py  [line:20]  INFO  Driver: 进入队伍
+Tue, 19 Nov 2019 00:48:04  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:48:04  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:48:04  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:48:04  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:48:06  logsystem.py  [line:20]  INFO  Driver: 等待2位乘客上车
+Tue, 19 Nov 2019 00:48:06  fighter_driver.py  [line:59]  INFO  等待点击大舅妈,坐标(540, 388)
+Tue, 19 Nov 2019 00:48:06  logsystem.py  [line:20]  INFO  Driver: 等待点击式神
+Tue, 19 Nov 2019 00:48:11  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:48:11  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:48:11  logsystem.py  [line:20]  INFO  Driver: 点击 式神 成功
+Tue, 19 Nov 2019 00:48:11  logsystem.py  [line:20]  INFO  Driver: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:48:11  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:48:11  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:48:38  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:48:38  logsystem.py  [line:20]  INFO  Driver: 战斗结束
+Tue, 19 Nov 2019 00:48:38  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:48:39  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:48:40  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:48:41  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:48:41  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:48:43  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:48:43  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:48:43  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:48:43  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:48:45  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:48:45  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:48:46  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:48:46  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:48:46  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:48:46  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:48:49  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:48:49  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:48:49  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:48:49  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:48:49  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:48:49  fighter_driver.py  [line:78]  INFO  Driver: 等待下一轮
+Tue, 19 Nov 2019 00:48:49  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:48:49  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:48:49  logsystem.py  [line:20]  INFO  Driver: 进入队伍
+Tue, 19 Nov 2019 00:48:51  logsystem.py  [line:20]  INFO  Driver: 等待2位乘客上车
+Tue, 19 Nov 2019 00:48:51  fighter_driver.py  [line:59]  INFO  等待点击大舅妈,坐标(540, 388)
+Tue, 19 Nov 2019 00:48:51  logsystem.py  [line:20]  INFO  Driver: 等待点击式神
+Tue, 19 Nov 2019 00:48:56  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:48:56  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:48:56  logsystem.py  [line:20]  INFO  Driver: 点击 式神 成功
+Tue, 19 Nov 2019 00:48:56  logsystem.py  [line:20]  INFO  Driver: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:48:58  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:48:58  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:49:29  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:49:29  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:49:29  logsystem.py  [line:20]  INFO  Driver: 战斗结束
+Tue, 19 Nov 2019 00:49:30  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:49:32  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:49:32  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:49:33  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:49:34  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:49:35  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:49:35  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:49:37  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:49:37  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:49:37  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:49:37  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:49:37  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:49:37  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:49:39  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:49:39  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:49:40  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:49:40  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:49:40  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:49:40  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:49:40  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:49:40  fighter_driver.py  [line:78]  INFO  Driver: 等待下一轮
+Tue, 19 Nov 2019 00:49:40  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:49:40  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:49:40  logsystem.py  [line:20]  INFO  Driver: 进入队伍
+Tue, 19 Nov 2019 00:49:42  logsystem.py  [line:20]  INFO  Driver: 等待2位乘客上车
+Tue, 19 Nov 2019 00:49:42  fighter_driver.py  [line:59]  INFO  等待点击大舅妈,坐标(540, 388)
+Tue, 19 Nov 2019 00:49:42  logsystem.py  [line:20]  INFO  Driver: 等待点击式神
+Tue, 19 Nov 2019 00:49:47  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:49:47  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:49:47  logsystem.py  [line:20]  INFO  Driver: 点击 式神 成功
+Tue, 19 Nov 2019 00:49:47  logsystem.py  [line:20]  INFO  Driver: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:49:48  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:49:48  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:50:10  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:50:11  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:50:12  logsystem.py  [line:20]  INFO  Driver: 战斗结束
+Tue, 19 Nov 2019 00:50:12  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:50:13  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:50:14  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:50:14  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:50:16  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:50:16  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:50:17  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:50:17  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:50:18  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:50:19  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:50:19  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:50:19  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:50:19  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:50:20  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:50:21  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:50:22  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:50:22  fighter_driver.py  [line:78]  INFO  Driver: 等待下一轮
+Tue, 19 Nov 2019 00:50:22  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:50:22  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:50:22  logsystem.py  [line:20]  INFO  Driver: 进入队伍
+Tue, 19 Nov 2019 00:50:24  logsystem.py  [line:20]  INFO  Driver: 等待2位乘客上车
+Tue, 19 Nov 2019 00:50:24  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:50:24  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:50:24  fighter_driver.py  [line:59]  INFO  等待点击大舅妈,坐标(540, 388)
+Tue, 19 Nov 2019 00:50:24  logsystem.py  [line:20]  INFO  Driver: 等待点击式神
+Tue, 19 Nov 2019 00:50:24  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:50:24  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:50:29  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:50:29  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:50:29  logsystem.py  [line:20]  INFO  Driver: 点击 式神 成功
+Tue, 19 Nov 2019 00:50:29  logsystem.py  [line:20]  INFO  Driver: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:50:30  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:50:30  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:50:53  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:50:53  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:50:53  logsystem.py  [line:20]  INFO  Driver: 战斗结束
+Tue, 19 Nov 2019 00:50:54  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:50:55  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:50:56  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:50:56  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:50:58  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:50:58  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:50:58  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:50:59  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:51:00  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:51:00  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:51:00  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:51:00  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:51:01  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:51:01  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:51:03  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:51:03  fighter_driver.py  [line:78]  INFO  Driver: 等待下一轮
+Tue, 19 Nov 2019 00:51:03  logsystem.py  [line:20]  INFO  Driver: 进入队伍
+Tue, 19 Nov 2019 00:51:03  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:51:03  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:51:04  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:51:04  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:51:04  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:51:04  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:51:05  logsystem.py  [line:20]  INFO  Driver: 等待2位乘客上车
+Tue, 19 Nov 2019 00:51:05  fighter_driver.py  [line:59]  INFO  等待点击大舅妈,坐标(540, 388)
+Tue, 19 Nov 2019 00:51:05  logsystem.py  [line:20]  INFO  Driver: 等待点击式神
+Tue, 19 Nov 2019 00:51:10  logsystem.py  [line:20]  INFO  Driver: 点击 式神 成功
+Tue, 19 Nov 2019 00:51:10  logsystem.py  [line:20]  INFO  Driver: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:51:10  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:51:10  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:51:10  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:51:10  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:51:33  logsystem.py  [line:20]  INFO  Driver: 战斗结束
+Tue, 19 Nov 2019 00:51:34  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:51:34  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:51:35  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:51:36  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:51:37  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:51:37  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:51:38  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:51:39  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:51:39  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:51:39  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:51:41  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:51:41  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:51:41  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:51:41  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:51:42  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:51:42  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:51:43  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:51:43  fighter_driver.py  [line:78]  INFO  Driver: 等待下一轮
+Tue, 19 Nov 2019 00:51:44  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:51:44  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:51:44  logsystem.py  [line:20]  INFO  Driver: 进入队伍
+Tue, 19 Nov 2019 00:51:45  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:51:45  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:51:45  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:51:45  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:51:45  logsystem.py  [line:20]  INFO  Driver: 等待2位乘客上车
+Tue, 19 Nov 2019 00:51:46  fighter_driver.py  [line:59]  INFO  等待点击大舅妈,坐标(540, 388)
+Tue, 19 Nov 2019 00:51:46  logsystem.py  [line:20]  INFO  Driver: 等待点击式神
+Tue, 19 Nov 2019 00:51:50  logsystem.py  [line:20]  INFO  Driver: 点击 式神 成功
+Tue, 19 Nov 2019 00:51:50  logsystem.py  [line:20]  INFO  Driver: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:51:51  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:51:51  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:51:52  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:51:52  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:52:17  logsystem.py  [line:20]  INFO  Driver: 战斗结束
+Tue, 19 Nov 2019 00:52:17  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:52:18  logsystem.py  [line:20]  INFO  Passenger: 战斗结束
+Tue, 19 Nov 2019 00:52:19  logsystem.py  [line:20]  INFO  Now you mood is level 3
+Tue, 19 Nov 2019 00:52:19  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:52:19  logsystem.py  [line:20]  INFO  Now you mood is level 1
+Tue, 19 Nov 2019 00:52:20  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:52:20  logsystem.py  [line:20]  INFO  Now you mood is level 1
+Tue, 19 Nov 2019 00:52:21  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:52:21  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:52:22  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:52:22  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:52:23  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:52:23  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:52:24  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:52:24  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:52:24  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:52:24  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:52:24  logsystem.py  [line:20]  INFO  Driver: 点击 结算
+Tue, 19 Nov 2019 00:52:26  logsystem.py  [line:20]  INFO  Passenger: 点击 结算
+Tue, 19 Nov 2019 00:52:26  logsystem.py  [line:20]  INFO  Driver: 点击 结算 成功
+Tue, 19 Nov 2019 00:52:26  fighter_driver.py  [line:78]  INFO  Driver: 等待下一轮
+Tue, 19 Nov 2019 00:52:27  logsystem.py  [line:20]  INFO  Driver: 进入队伍
+Tue, 19 Nov 2019 00:52:27  logsystem.py  [line:20]  INFO  Now you mood is level 5
+Tue, 19 Nov 2019 00:52:27  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:52:27  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:52:27  logsystem.py  [line:20]  INFO  Passenger: 点击 结算 成功
+Tue, 19 Nov 2019 00:52:27  fighter_passenger.py  [line:42]  INFO  Passenger: 等待下一轮
+Tue, 19 Nov 2019 00:52:27  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:52:27  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:52:29  logsystem.py  [line:20]  INFO  Passenger: 进入队伍
+Tue, 19 Nov 2019 00:52:29  logsystem.py  [line:20]  INFO  Passenger: 检测是否进入战斗
+Tue, 19 Nov 2019 00:52:30  logsystem.py  [line:20]  INFO  Driver: 等待2位乘客上车
+Tue, 19 Nov 2019 00:52:30  fighter_driver.py  [line:59]  INFO  等待点击大舅妈,坐标(540, 388)
+Tue, 19 Nov 2019 00:52:30  logsystem.py  [line:20]  INFO  Driver: 等待点击式神
+Tue, 19 Nov 2019 00:52:35  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:52:35  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:52:35  logsystem.py  [line:20]  INFO  Driver: 点击 式神 成功
+Tue, 19 Nov 2019 00:52:35  logsystem.py  [line:20]  INFO  Driver: 检测是战斗是否结束
+Tue, 19 Nov 2019 00:52:39  logsystem.py  [line:20]  INFO  Passenger: 已进入战斗
+Tue, 19 Nov 2019 00:52:39  logsystem.py  [line:20]  INFO  Passenger: 检测是战斗是否结束

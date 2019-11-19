@@ -144,7 +144,7 @@
             </size>
            </property>
            <property name="currentIndex">
-            <number>0</number>
+            <number>1</number>
            </property>
            <widget class="QWidget" name="tab">
             <attribute name="title">
@@ -208,7 +208,7 @@
              <string>探索</string>
             </attribute>
             <layout class="QGridLayout" name="gridLayout_5">
-             <item row="1" column="0">
+             <item row="4" column="0">
               <widget class="QGroupBox" name="groupBox_3">
                <property name="minimumSize">
                 <size>
@@ -223,7 +223,7 @@
                 <item row="0" column="1">
                  <widget class="QLineEdit" name="lineEdit_3">
                   <property name="text">
-                   <string>3</string>
+                   <string>1</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -240,17 +240,14 @@
                </layout>
               </widget>
              </item>
-             <item row="3" column="0">
-              <widget class="QCheckBox" name="checkBox_3">
+             <item row="2" column="0">
+              <widget class="QRadioButton" name="explore_passenger">
                <property name="text">
-                <string>换狗粮拖放式神进度条，进度：</string>
-               </property>
-               <property name="checked">
-                <bool>true</bool>
+                <string>打手</string>
                </property>
               </widget>
              </item>
-             <item row="4" column="0">
+             <item row="7" column="0">
               <widget class="QSlider" name="horizontalSlider">
                <property name="sliderPosition">
                 <number>10</number>
@@ -260,37 +257,44 @@
                </property>
               </widget>
              </item>
-             <item row="6" column="0">
-              <widget class="QCheckBox" name="checkBox_2">
-               <property name="text">
-                <string>结束后打BOSS</string>
-               </property>
-              </widget>
-             </item>
              <item row="0" column="0">
-              <widget class="QPlainTextEdit" name="plainTextEdit_2">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>16777215</height>
-                </size>
+              <widget class="QRadioButton" name="explore_single">
+               <property name="text">
+                <string>单刷</string>
                </property>
-               <property name="readOnly">
+               <property name="checked">
                 <bool>true</bool>
                </property>
-               <property name="plainText">
-                <string>把狗粮队长放在最左边，点开需要打的章节，然后开始。
-
-支持自动换狗粮，只打经验怪。
-
-最好把“合并相同式神”选项关闭。</string>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QRadioButton" name="explore_driver">
+               <property name="text">
+                <string>司机</string>
                </property>
               </widget>
              </item>
-             <item row="2" column="0">
+             <item row="3" column="0">
+              <widget class="QRadioButton" name="explore_dual">
+               <property name="text">
+                <string>双开</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
               <widget class="Line" name="line_4">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QCheckBox" name="checkBox_3">
+               <property name="text">
+                <string>换狗粮拖放式神进度条，进度：</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
                </property>
               </widget>
              </item>
@@ -315,7 +319,17 @@
                <property name="plainText">
                 <string>网址：https://github.com/AcademicDog/onmyoji_bot
 
-交流Q群：592055060</string>
+交流Q群：592055060
+
+使用说明：
+
+探索：
+
+把狗粮队长放在最左边，点开需要打的章节，然后开始。
+
+支持自动换狗粮，只打经验怪。
+
+最好把“合并相同式神”选项关闭。</string>
                </property>
               </widget>
              </item>
@@ -351,47 +365,17 @@
             <string>高级选项</string>
            </property>
            <layout class="QGridLayout" name="gridLayout_7">
-            <item row="1" column="0">
-             <widget class="QCheckBox" name="checkBox">
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="autoMark">
               <property name="text">
-               <string>超时自动关闭阴阳师</string>
+               <string>御魂自动标记式神</string>
               </property>
               <property name="checked">
                <bool>true</bool>
               </property>
              </widget>
             </item>
-            <item row="4" column="1">
-             <widget class="QLineEdit" name="lineEdit_2">
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>20</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>20</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="0">
-             <widget class="QLabel" name="label_3">
-              <property name="text">
-               <string>  操作超时时间(秒)：</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0">
-             <widget class="QLabel" name="label_2">
-              <property name="text">
-               <string>  画面超时时间(秒)：</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
+            <item row="5" column="1">
              <widget class="QLineEdit" name="lineEdit">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -413,10 +397,73 @@
               </property>
              </widget>
             </item>
-            <item row="0" column="0">
-             <widget class="QCheckBox" name="autoMark">
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_6">
               <property name="text">
-               <string>御魂自动标记左一式神</string>
+               <string>  标记式神所处坐标(X,Y)：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="ShiShenPosY">
+              <property name="text">
+               <string>388</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QLineEdit" name="lineEdit_2">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>20</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="ShiShenPosX">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="text">
+               <string>540</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>  操作超时时间(秒)：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>  画面超时时间(秒)：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QCheckBox" name="checkBox">
+              <property name="text">
+               <string>超时自动关闭阴阳师</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
               </property>
              </widget>
             </item>

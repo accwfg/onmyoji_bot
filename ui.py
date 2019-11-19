@@ -53,6 +53,8 @@ class MyMainWindow(QMainWindow):
                  str(self.ui.checkBox.isChecked()))
         conf.set('watchdog', 'autoMark',
                  str(self.ui.autoMark.isChecked()))
+        conf.set('watchdog', 'ShiShenPosX',str(self.ui.ShiShenPosX.text()))
+        conf.set('watchdog', 'ShiShenPosY',str(self.ui.ShiShenPosY.text()))
         conf.set('watchdog', 'max_win_time', str(self.ui.lineEdit.text()))
         conf.set('watchdog', 'max_op_time', str(self.ui.lineEdit_2.text()))
 
@@ -64,7 +66,7 @@ class MyMainWindow(QMainWindow):
         if section == 1:
             # 探索
             conf.set('explore', 'fight_boss_enable',
-                     str(self.ui.checkBox_2.isChecked()))
+                     True)
             conf.set('explore', 'slide_shikigami',
                      str(self.ui.checkBox_3.isChecked()))
             conf.set('explore', 'slide_shikigami_progress',

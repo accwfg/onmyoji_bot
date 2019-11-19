@@ -16,6 +16,8 @@ class DriverFighter(Fighter):
         Fighter.__init__(self, 'Driver: ', emyc, hwnd)
         self.needMark = needMark
         self.passengerNum = passengerNum
+        # 第一次点击挑战
+        self.firstClickTiaoZhan = True
 
     def start(self):
         '''单人御魂司机'''
@@ -33,18 +35,35 @@ class DriverFighter(Fighter):
             if self.passengerNum == 2:
                 self.log.writeinfo('Driver: 等待1位乘客上车')
                 self.click_until('开始战斗按钮', 'img\\ZI-DONG.png', *
-                YuhunPos.开始战斗按钮, mood2.get1mood() / 1000)
+                YuhunPos.TiaoZhanBtn, mood2.get1mood() / 1000)
                 self.log.writeinfo('Driver: 已进入战斗')
             elif self.passengerNum == 3:
                 self.log.writeinfo('Driver: 等待2位乘客上车')
-                self.click_until('开始战斗按钮', 'img\\DUI-YOU-JIA-HAO.png', *
-                YuhunPos.开始战斗按钮, mood2.get1mood() / 1000, appear=False)
+                # if self.firstClickTiaoZhan is True:
+                #     print('第一次挑战')
+                #     time.sleep(1)
+                #     self.firstClickTiaoZhan = False
+                #     self.yys.mouse_click_bg(*YuhunPos.TiaoZhanBtn)
+                # else:
+                self.yys.wait_game_img('img\\JIA-CHENG.png')
+                # print('加成按钮已经出现')
+                self.yys.mouse_click_bg(*YuhunPos.TiaoZhanBtn)
+                # self.click_until('开始战斗按钮', 'img\\DUI-YOU-JIA-HAO.png', *
+                # YuhunPos.TiaoZhanBtn, mood2.get1mood() / 1000, appear=False)
+                # print('点击挑战按钮成功')
 
-            if self.needMark:
+            # logging.info('御魂司机的needmark为{}'.format(self.needMark))
+
+            if self.needMark is True:
                 # todo 点击大舅妈
-                self.click_once_if_appear('开始战斗按钮', 'img\\YI-HUI-MU.png', *
-                YuhunPos.大舅妈位置, mood2.get1mood() / 1000, appear=True)
-
+                logging.info('等待点击大舅妈,坐标{}'.format(self.ShiShenPos))
+                self.log.writeinfo('Driver: 等待点击式神')
+                # self.click_once_if_appear('点击式神','img\\YI-HUI-MU.png',
+                # *YuhunPos.大舅妈位置,mood2.get1mood() / 1000)
+                self.yys.wait_game_img('img\\YI-HUI-MU.png')
+                self.click_once_if_appear('式神','img\\YI-HUI-MU.png',self.ShiShenPos,None,1,True)
+                # self.click_until('式神', 'img\\ZHUN-BEI.png',
+                #                           self.ShiShenPos, pos_end=None, step_time=mood2.get1mood() / 1000,appear=False)
             # 检测是否打完
             self.check_end()
             mood2.moodsleep()

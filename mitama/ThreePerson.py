@@ -57,12 +57,13 @@ class ThreePerson():
         try:
             task1 = threading.Thread(target=self.driver.start)
             task2 = threading.Thread(target=self.passengerOne.start)
-            task3 = threading.Thread(target=self.passengerThree.start)
+            task3 = threading.Thread(target=self.passengerTwo.start)
             task1.start()
             task2.start()
             task3.start()
-            # task1.join()
-            # task2.join()
+            task1.join()
+            task2.join()
+            task3.join()
         except AttributeError:
             logging.error('游戏异常,请检查游戏是否运行')
 
@@ -70,4 +71,5 @@ class ThreePerson():
         # 停止脚本后需要移除所有获取的窗体句柄
         hwndlist.clear()
         self.driver.deactivate()
-        self.passenger.deactivate()
+        self.passengerOne.deactivate()
+        self.passengerTwo.deactivate()
